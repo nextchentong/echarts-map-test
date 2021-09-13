@@ -1,0 +1,161 @@
+.icon-result{
+  display:inline-block;
+  position:absolute;
+  width:17px;
+  height:17px;
+  background-image:url("../images/result.png");
+  cursor:pointer;
+}
+.a-web-nav-temp{
+  height:50px;
+  background-color:#262626;
+}
+@keyframes user-panel-sliderDown{
+  0%{
+    opacity:0;
+    margin-bottom:0;
+    transform:translateY(-10px)
+  }
+  to{
+    opacity:1;
+    margin-bottom:10px;
+    transform:translateY(0)
+  }
+}
+
+.a-web-nav{
+  display:block;
+
+  font-size:0;
+  height:50px;
+  background-color:#298675;
+  box-sizing:border-box;
+  width:100%;
+  line-height:50px;
+  .nav-logo{
+    width: 180px;
+    padding-left: 10px;
+    height: 100%;
+    float: left;
+    a{
+      width:100%;
+      height:100%;
+      display:inline-block;
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+      position:relative;
+
+    }
+    .icon-logo{
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 128px;
+      height: 42px;
+      background-image:url("../images/wz-logo.png");
+      background-size:cover;
+    }
+  }
+  .nav-content{
+    float: left;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.1);
+    span{
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  .nav-list{
+    display:inline-block;
+    position:absolute;
+    right:0;
+    min-width:314px;
+    height:50px;
+    .user-base{
+      position:relative;
+      float:left;
+      height:50px;
+      margin-left:10px;
+      padding-right:20px;
+      &:hover{
+        .user-panel{
+          display:block;
+          top:50px;
+          line-height:normal;
+          .user-panel-inner {
+            animation-name: user-panel-sliderDown;
+          }
+        }
+      }
+      span{
+        float:left;
+        position:relative;
+        height:50px;
+        text-align:center;
+        text-decoration:none;
+        color:#fff;
+        font-size:12px;
+      }
+      .icon-row{
+        display:block;
+        right:0;
+        bottom:0;
+        top:0;
+        margin:auto;
+        width:10px;
+        height:6px;
+        background-position:0px -187px;
+      }
+      .user-panel{
+        background-color:#191919;
+        position:absolute;
+        left:0;
+        cursor:default;
+        z-index:2000;
+        display:none;
+        padding:10px 0 0;
+        padding-bottom:10px \9;
+        min-width:110px;
+        box-sizing:border-box;
+        text-align:left;
+        .user-panel-inner{
+          animation-duration:.5s;
+          animation-fill-mode:both;
+          a{
+            display:block;
+            line-height:32px;
+            color:#bbb;
+            font-size:12px;
+            padding-left:20px;
+            padding-right:20px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-li{
+    float:left;
+    min-width:56px;
+    position:relative;
+
+    a{
+      height:50px;
+      display:block;
+      line-height:67px;
+      text-align:center;
+    }
+  }
+  .icon-setting, .icon-info, .icon-mail{
+    fill:#ddd;
+    width:17px;
+    height:16px;
+    position:relative;
+  }
+}

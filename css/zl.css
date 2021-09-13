@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.detail-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px ;
+    overflow: auto;
+}
+.card {
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+}
+.card .card-header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+}
+.card .card-header .header-title {
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+.card .card-header .header-action a {
+    float: right;
+    height: 100%;
+    color: #298675;
+}
+.card .card-body {
+    height: 100%;
+    padding: 0 10px;
+    color: #fff;
+}
+.card .card-body .header-title {
+    font-size: 16px;
+}
+header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #16f7ff;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    background: rgba(25, 72, 136, 0.37);
+    border: none;
+}
+.ant-tag-blue {
+    background: #164c7e;
+    color: #fff;
+    border: 1px solid;
+    border-color: #164c7e;
+    font-size: 14px;
+    padding: 5px 10px;
+    height: 32px;
+    margin: 0 4px 6px 0;
+}
+.ant-tag-purple {
+    background: #146262;
+    color: #fff;
+    border: 1px solid;
+    border-color: #146262;
+    font-size: 14px;
+    padding: 5px 10px;
+    height: 32px;
+    margin: 0 4px 6px 0;
+}
