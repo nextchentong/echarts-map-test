@@ -10,69 +10,14 @@
     <link rel="stylesheet" href="./css/antd-guowang.min.css">
     <link rel="stylesheet" href="./css/res.css">
     <link rel="stylesheet" href="./css/muli.css">
-    <style>
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        body {
-            background: transparent;
-        }
-
-        iframe .detail-card {
-            width: 100%;
-        }
-    </style>
 </head>
 
 <body>
-
-    <div class="card" style="width: 100%;height: 100%;">
-        <div class="header_inner" id="header_01">
-
-        </div>
-        <div class="card-header">
-            <span class="header-title">装备制造单位</span>
-        </div>
-        <div class="card-inner" id="inner_01">
-            <div class="card-body" id="Muli_01">
-
-            </div>
-        </div>
-        <div class="footer-inner" id="footer_01"></div>
+    <div id="Muli_01">
     </div>
-
 </body>
 <script src="./js/lib/react-production.min.js"></script>
 <script src="./js/lib/react-dom-production.min.js"></script>
-<script src="./js/lib/datav.min.js"></script>
-<script>
-    const chart01 = React.createElement('div', {
-        id: 'Muli_01',
-        class: 'card-body'
-    })
-
-    const inner01 = React.createElement(datav.BorderBox11, {
-        color: ['#32c5e9']
-    }, chart01)
-
-    ReactDOM.render(inner01, document.querySelector('#inner_01'))
-
-    const header01 = React.createElement(datav.Decoration1, {
-        color: ['#32c5e9']
-    })
-
-    ReactDOM.render(header01, document.querySelector('#header_01'))
-
-    const footer01 = React.createElement(datav.Decoration4, {
-        color: ['#32c5e9'],
-        dur: 100
-    })
-
-    ReactDOM.render(footer01, document.querySelector('#footer_01'))
-</script>
 <script src="./js/lib/jquery.min.js"></script>
 <script src="./js/lib/echarts.min.js"></script>
 <script src="./js/GreenTheme.js"></script>

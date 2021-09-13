@@ -250,6 +250,14 @@ var data = [
     zb: 8.92,
     fzb: 1.59,
   },
+  {
+    name: '海南',
+    value: (956323967.43 / 100000000).toFixed(2),
+    zbyj: 14.97,
+    sgsej: 8.79,
+    zb: 8.92,
+    fzb: 1.59,
+  },
 ]
 var option = {}
 var geoCoordMap = {
