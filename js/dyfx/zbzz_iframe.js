@@ -749,9 +749,6 @@ option = {
   },
   geo: {
     map: 'china',
-    left: '250',
-    right: '250',
-    layoutSize: '80%',
     label: {
       emphasis: {
         show: false,
